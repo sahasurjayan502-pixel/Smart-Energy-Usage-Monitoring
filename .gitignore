@@ -1,0 +1,108 @@
+# ============================================================
+# Smart Energy Usage Monitor — .gitignore
+# ============================================================
+
+# --------------------------
+# Python cache / bytecode
+# --------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# --------------------------
+# Virtual environments
+# --------------------------
+venv/
+.venv/
+env/
+.env/
+ENV/
+Lib/
+Scripts/
+
+# --------------------------
+# Environment / secrets
+# --------------------------
+.env
+.env.*
+*.env
+secrets.py
+credentials.py
+*.key
+*.pem
+*.cer
+
+# --------------------------
+# SQLite databases (auto-generated at runtime)
+# --------------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Keep the data directory structure but not generated databases
+data/energy_monitor.db
+data/energy_monitor.db-shm
+data/energy_monitor.db-wal
+
+# --------------------------
+# External data files
+# (too large and licensing unclear for redistribution)
+# --------------------------
+electricity_bill_dataset.csv
+Tariff_and_Duty_of_Electricity_Supply_in_India-March_2026.pdf
+data/raw/
+data/backup_pre_functional_redesign/
+
+# --------------------------
+# Logs
+# --------------------------
+*.log
+scratch_st.log
+logs/
+
+# --------------------------
+# Backup folders
+# --------------------------
+Smart_Energy_Usage_moniter_BACKUP/
+*_BACKUP/
+*_backup/
+
+# --------------------------
+# Pytest / test cache
+# --------------------------
+.pytest_cache/
+.cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# --------------------------
+# IDE / editor files
+# --------------------------
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------------------------
+# Build / dist artifacts
+# --------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+site/
+
+# --------------------------
+# Jupyter
+# --------------------------
+.ipynb_checkpoints/
+*.ipynb
